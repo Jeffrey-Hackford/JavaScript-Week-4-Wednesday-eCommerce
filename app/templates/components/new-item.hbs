@@ -1,21 +1,25 @@
-<div class="container">
-  <form>
+<div class="container center">
+  <form class="form-group left">
     <div class="form-group">
       <label for="name">What is the item for sale?</label>
       {{input value=name id="name"}}
     </div>
+    <br>
     <div class="form-group">
       <label for="description">Describe the item</label>
       {{textarea value=description id="description"}}
     </div>
+    <br>
     <div class="form-group">
       <label for="image">Add an image of the item</label>
       {{input value=image id="image"}}
     </div>
+    <br>
     <div class="form-group">
       <label for="cost">How much are you selling it for?</label>
       {{input value=cost id="cost"}}
     </div>
-    <button {{action 'addItemToDB'}}>Post it!</button>
+    <br>
+    <button class="btn" {{action 'addItemToDB'}}>Post it!</button>
   </form>
 </div>

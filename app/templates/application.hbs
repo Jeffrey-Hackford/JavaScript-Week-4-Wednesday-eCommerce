@@ -1,14 +1,26 @@
-<header>
-  <div class="container header">
-    <h1 class="center">Welcome to <span id="THE">THE</span> Store</h1>
-    {{#link-to 'index'}}Home{{/link-to}}
-    {{#link-to 'admin'}}Admin{{/link-to}}
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">E-COM</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>{{#link-to "index"}}Home{{/link-to}}</li>
+        <li>{{#link-to 'admin'}}Admin{{/link-to}}</li>
+        <li>{{#link-to 'cart'}}Shopping Cart{{/link-to}}</li>
+      </ul>
+    </div><!--/.nav-collapse -->
   </div>
-</header>
+</nav>
+<div class="custom">
+  {{outlet}}
+</div>
 
-{{outlet}}
 
-<br>
-<hr>
-<footer>
-</footer>
+<!-- <hr class="featurette-divider"> -->

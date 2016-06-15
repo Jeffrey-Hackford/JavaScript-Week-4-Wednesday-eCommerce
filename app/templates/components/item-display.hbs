@@ -1,5 +1,26 @@
-<ul>
+<!-- <div class="">
   {{#each model as |item|}}
-    <li>{{item.cost}}</li>
+    <div class="col-xs-10 item">
+      <img src="{{item.image}}">
+      <h4>{{item.name}}</h4>
+      <p>${{item.cost}}</p>
+      <button {{action 'addToCart' item}}>Add to Cart</button>
+    </div>
   {{/each}}
-</ul>
+</div> -->
+<div class="container">
+  {{#each model as |item|}}
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">{{item.name}}
+          <span class="text-muted">${{item.cost}}</span></h2>
+        <p class="lead">{{item.description}}</p>
+      </div>
+      <div class="col-md-5">
+        <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="{{item.image}}" data-holder-rendered="true">
+      </div>
+    </div>
+    <button {{action 'addToCart' item}}>Add to Cart</button>
+    <hr class="featurette-divider">
+  {{/each}}
+</div>
