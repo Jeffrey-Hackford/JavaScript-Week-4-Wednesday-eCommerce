@@ -6,3 +6,9 @@
 .center {
   text-align: center;
 }
+
+.header {
+  background-color: lightgray;
+  border-radius: 3em;
+  margin-top: 10px;
+}
