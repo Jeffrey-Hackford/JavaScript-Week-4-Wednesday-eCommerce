@@ -1,0 +1,7 @@
+<div class="container">
+  {{#each shoppingCart.items as |item|}}
+    <img src="{{item.image}}">
+    <li>{{item.cost}}</li>
+  {{/each}}
+  <p>Total Cost: ${{shoppingCartTotalCost}}</p>
+</div>

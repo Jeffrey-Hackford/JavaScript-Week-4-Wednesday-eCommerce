@@ -22,7 +22,8 @@ body {
   border-radius: 3em;
   margin-top: 0px;
   min-height: 150px;
-
+  max-height: 150px;
+  background-image:radial-gradient(lightblue, white);
 }
 
 .row {
@@ -31,4 +32,15 @@ body {
 
 img {
   border-radius: 3em;
+  max-height: 150px;
+  padding-bottom: 5px;
+  padding-top: 2px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+body {
+  background-image: url("http://www.myfreetextures.com/wp-content/uploads/2014/10/seamless-wood-background-3.jpg");
 }
